@@ -61,14 +61,19 @@ h3 {
 /* Title Image */
 
 .title-image {
-    width: 60%;
+    width: 16%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 21%;
 }
 
 /* Features Section */
 
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box {
@@ -122,3 +127,46 @@ h3 {
 .pricing-column {
     padding: 3% 2%;
 }
+
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+
+}
+
+/* Call to Action */
+
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* footer */
+
+#footer {
+    background-color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+
